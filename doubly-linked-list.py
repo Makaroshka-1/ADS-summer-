@@ -3,7 +3,9 @@ class Node:
         self.value=value
         self.next = None
         self.prev = None
-class Deque:
+
+class Doubly_linked_list:
+
     def __init__(self):
         self.head = None
         self.tail = None
@@ -68,19 +70,5 @@ class Deque:
         if self.isEmpty():
             return -1
         return self.tail.value
-    
-Deque=Deque()
-Deque.add_head(5)
-#print(Deque.peek_head())
-Deque.add_head(6)
-#print(Deque.peek_head())
-Deque.add_head(7)
-#print(Deque.peek_head())
-Deque.add_tail(8)
-Deque.add_tail(10)
-Deque.peek_tail()
 
-print(Deque.peek_tail())
-Deque.remove_tail()
-print(Deque.peek_tail())
-print(Deque.size)
+new_list = Doubly_linked_list()

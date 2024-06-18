@@ -5,6 +5,7 @@ class Node:
         self.next = None
 
 class Stack:
+
     def __init__(self):
         self.head = None
         self.size = 0
@@ -18,9 +19,9 @@ class Stack:
         if self.head == None:
             self.head = Node(value)
         else:
-            newnode = Node(value)
-            newnode.next=self.head
-            self.head = newnode
+            node = Node(value)
+            node.next=self.head
+            self.head = node
         self.size +=1
 
     def pop(self):
@@ -35,7 +36,7 @@ class Stack:
     def peek(self):
         if self.isEmpty():
             return None
-        self.head.value
+        return self.head.value
 
     def get_size(self):
         return self.size
